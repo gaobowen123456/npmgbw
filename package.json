@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "test-01",
+        "scope": null,
+        "escapedName": "test-01",
+        "name": "test-01",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "F:\\demo"
+    ]
+  ],
+  "_from": "test-01@latest",
+  "_inCache": true,
+  "_location": "/test-01",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/test-01-1.0.0.tgz_1482734852303_0.8566217618063092"
+  },
+  "_npmUser": {
+    "name": "gbw",
+    "email": "gao18911717036@163.com"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "test-01",
+    "scope": null,
+    "escapedName": "test-01",
+    "name": "test-01",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/test-01/-/test-01-1.0.0.tgz",
+  "_shasum": "74c2efe1c35c00ed82996861b463a9889ae872f8",
+  "_shrinkwrap": null,
+  "_spec": "test-01",
+  "_where": "F:\\demo",
+  "author": "gbw",
+  "bugs": {
+    "url": "https://github.com/gaobowen123456/npmgbw/issues"
+  },
+  "dependencies": {},
+  "description": "一个测试案例",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "74c2efe1c35c00ed82996861b463a9889ae872f8",
+    "tarball": "https://registry.npmjs.org/test-01/-/test-01-1.0.0.tgz"
+  },
+  "homepage": "https://github.com/gaobowen123456/npmgbw#readme",
+  "keywords": [
+    "121234"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    "gbw <gao18911717036@163.com>"
+  ],
+  "name": "test-01",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gaobowen123456/npmgbw.git"
+  },
+  "scripts": {
+    "test": "121234"
+  },
+  "version": "1.0.1"
+}
