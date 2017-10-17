@@ -11,7 +11,6 @@ import javax.persistence.criteria.Root;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -81,6 +80,17 @@ public abstract class ProjectPlanController {
 			//这是我在方法中添加的行
 			back.setBackData(backVO);
 			back.setBackMsg("新增成功");
+		}
+		return back;
+
+	}
+	public JsonBackData insert(@RequestBody ProjectPlanVO projectPlanVO) {
+		JsonBackData back = new JsonBackData();
+		try {
+			ProjectPlanVO backVO = projectPlanService.insert(projectPlanVO);
+			//这是我在方法中添加的行
+			back.setBackData(backVO);
+			back.setBackMsg("新增成功");
 		} catch (BusinessException e) {
 			back.setSuccess(false);
 			back.setBackMsg("新增失败:"+e.getMessage());
@@ -110,26 +120,6 @@ public abstract class ProjectPlanController {
 		return back;
 	}
 
-	/**
-	 * 删除
-	 * 
-	 * @param projectPlanVOs
-	 * @return
-	 */
-	@RequestMapping(value = "delete")
-	@ResponseBody
-	public JsonBackData delete(@RequestBody ProjectPlanVO[] projectPlanVOs) {
-		JsonBackData back = new JsonBackData();
-		try {
-			projectPlanService.delete(projectPlanVOs);
-			back.setSuccess(true);
-			back.setBackMsg("删除成功");
-		} catch (BusinessException e) {
-			back.setSuccess(false);
-			back.setBackMsg("删除失败:"+e.getMessage());
-		}
-		return back;
-	}
 
 	/**
 	 * 查询详细信息
@@ -154,6 +144,12 @@ public abstract class ProjectPlanController {
 	}
 
 	/**
+	 * 查询
+	 * 
+	 * @param QuerySchema
+	 * @return
+	 */
+	 /**
 	 * 查询
 	 * 
 	 * @param QuerySchema
